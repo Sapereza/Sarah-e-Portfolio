@@ -513,6 +513,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.float-right {
+  float: right;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -521,7 +533,152 @@ video {
   width: 2rem;
 }
 
+.flex-none {
+  flex: none;
+}
+
+.list-decimal {
+  list-style-type: decimal;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:float-right {
+    float: right;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:float-right {
+    float: right;
+  }
+
+  .md\:m-4 {
+    margin: 1rem;
+  }
+
+  .md\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .md\:mx-52 {
+    margin-left: 13rem;
+    margin-right: 13rem;
+  }
+
+  .md\:mx-48 {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .lg\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .lg\:mx-52 {
+    margin-left: 13rem;
+    margin-right: 13rem;
+  }
+
+  .lg\:my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .lg\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .lg\:mx-48 {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
+  .lg\:justify-around {
+    justify-content: space-around;
+  }
+
+  .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
 }

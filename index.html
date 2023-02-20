@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -12,25 +13,31 @@
     </header>
     
     <!--START OF NAVIGATION MENU-->
-    <nav>
+    <nav class="m-4">
+        <div class="sm:float-right">
         <div>
-            <svg class="h-8 w-8 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
+            <button onclick="menu()" class="md:hidden">
+                <svg class="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
         </div>
 
-        <div>
-            <ul>
+        <div id="navList" class="md:hidden">
+            <ul class="list-none">
                 <li>
                     <a href="index.html">Home</a>
                 </li>
+
                 <li>
                     <a href="aboutMe.html">About Me</a>
                 </li>
+
                 <li>
                     <a href="gallery.html">Gallery</a>
                 </li>
             </ul>
+        </div>
         </div>
 
 
@@ -45,6 +52,6 @@
 
     </footer>
 
-
+    <script src="app.js"></script>
 </body>
 </html>
