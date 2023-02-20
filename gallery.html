@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="bg-blue-600">
+    <header class="bg-white p-4">
+        <!--START OF NAVIGATION MENU-->
+    <nav class="flex justify-between items-center w-[-92%] mx-auto">
+        
+        <div class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                <li>
+                    <a class="hover:text-slate-400" href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a class="hover:text-slate-400" href="aboutMe.html">About Me</a>
+                </li>
+
+                <li>
+                    <a class="hover:text-slate-400" href="gallery.html">Gallery</a>
+                </li>
+            </ul>
+        </div> 
+
+        <div class="flex itmes-center gap-6">
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+
+    </nav>
+
+    <!--END OF NAVIGATION MENU-->
+
+    </header>
     
+    
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
